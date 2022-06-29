@@ -1,0 +1,5 @@
+@import '../../../sass/placeholders/_visually-hidden.scss';
+
+.radio {
+    @extend %visually-hidden;
+}

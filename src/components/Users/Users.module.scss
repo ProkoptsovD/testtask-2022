@@ -1,0 +1,15 @@
+.container {
+    padding-top: 140px;
+}
+.heading {
+    margin-bottom: 50px;
+}
+.user_list {
+    margin-bottom: 50px;
+}
+.list_item:not(:last-child) {
+    margin-bottom: 20px;
+}
+.btn {
+    min-width: 120px;
+}

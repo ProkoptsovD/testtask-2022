@@ -12,7 +12,7 @@
     --fs-800: 40px; /* headings*/
 
     /* ======================== line-height ======================= */
-    --lh-400: 1.6; /* normal */
+    --lh-400: 1.62; /* normal */
     --lh-100: 1; /* headings */
 
     /* ========================*** color pallete ***===================== */
@@ -23,10 +23,10 @@
 
     /* ============================= neutral =============================*/
 
-    --clr-ligth-solid: #ffffff; /*white color with no opacity*/
-    --clr-ligth-semi-solid: #ffffff87; /*white color with opacity*/
+    --clr-light-solid: #ffffff; /*white color with no opacity*/
+    --clr-light-semi-solid: #ffffffde; /*white color with opacity*/
     --clr-dark-solid: #000000;/*black color with no opacity*/
-    --clr-dark-semi-solid: #00000087;/*black color with opacity*/
+    --clr-dark-semi-solid: #000000de;/*black color with opacity*/
 
     /* ============================ background ===========================*/
 
@@ -34,7 +34,6 @@
     --clr-text-secondary: #7E7E7E; /* secondary text color*/
 
     /* ============================ buttons ============================= */
-    --clr-btn-text-secondary: #FFFFFF87; /*text inside buttons when hovered, active, focused*/
     --clr-btn-disabled: #B4B4B4; /*disabled button color*/
     --clr-btn-hovered: #FFE302; /*hovered button color*/
 
@@ -46,8 +45,13 @@
 
     --spc-card: 20px; /*user card spacing*/
 
-    /* =========================== breack-points ======================== */
+    /* ======================*** transitions ***=========================*/
+
+    --tr-time-normal: 250ms;
+    --tr-timing-fn: ease;
+    
+    /*=======================*** container sizes ***=====================*/
     --mobile: 360px;
     --tablet: 768px;
-    --desctop: 1024px;
+    --desktop: 360px;
 }

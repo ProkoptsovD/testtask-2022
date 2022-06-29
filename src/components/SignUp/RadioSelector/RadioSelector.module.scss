@@ -1,0 +1,20 @@
+.title {
+    margin-bottom: 11px;
+}
+.radio_list {
+    margin-bottom: 47px;
+    text-align: left;
+    color: var(--clr-dark-semi-solid);
+}
+.list_item {
+    display: flex;
+    align-items: center;
+}
+.label {
+    margin-left: 12px;
+    text-transform: capitalize;
+}
+.radio {
+    width: 20px;
+    height: 20px;
+}

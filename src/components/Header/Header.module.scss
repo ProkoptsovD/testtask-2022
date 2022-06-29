@@ -1,0 +1,15 @@
+.header {
+    width: 100%;
+    padding: 13px 0;
+
+    .container {
+        display: flex;
+        align-items: center;
+    }
+    .logo {
+        margin-right: auto;
+    }
+    .btn {
+        margin-right: 10px;
+    }
+}

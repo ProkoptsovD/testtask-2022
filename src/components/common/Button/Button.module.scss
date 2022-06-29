@@ -1,0 +1,25 @@
+.button {
+    display: inline-block;
+    min-width: 100px;
+    min-height: 34px;
+    font: inherit;
+    text-align: center;
+    border: none;
+    border-radius: 80px;
+    background-color: var(--clr-primary);
+    color: var(--clr-dark-semi-solid);
+    cursor: pointer;
+
+    transition: color var(--tr-time-normal) var(--tr-timing-fn),
+                background-color var(--tr-time-normal) var(--tr-timing-fn);
+
+    &:hover {
+        background-color: var(--clr-btn-hovered);
+    }
+
+    &:disabled {
+        background-color: var(--clr-btn-disabled);
+        color: var(--clr-light-semi-solid);
+        cursor: auto;
+    }
+}
