@@ -1,0 +1,53 @@
+:root {
+    /* ========================*** typography ***======================== */
+    
+    /* ======================== font-family ======================= */
+    --ff-400: 'Nunito', sans-serif; /* main */
+    
+    /* ======================== font-wieght ======================= */
+    --fw-400: 400; /* normal */
+    
+    /* ======================== font-size ========================= */
+    --fs-400: 16px; /* normal*/
+    --fs-800: 40px; /* headings*/
+
+    /* ======================== line-height ======================= */
+    --lh-400: 1.6; /* normal */
+    --lh-100: 1; /* headings */
+
+    /* ========================*** color pallete ***===================== */
+    /* ============================= accent ============================= */
+
+    --clr-primary: #F4E041; /* main brand color*/
+    --clr-secondary: #00BDD3; /* secondary brand color*/
+
+    /* ============================= neutral =============================*/
+
+    --clr-ligth-solid: #ffffff; /*white color with no opacity*/
+    --clr-ligth-semi-solid: #ffffff87; /*white color with opacity*/
+    --clr-dark-solid: #000000;/*black color with no opacity*/
+    --clr-dark-semi-solid: #00000087;/*black color with opacity*/
+
+    /* ============================ background ===========================*/
+
+    --clr-bg-primary: #F8F8F8; /* main background color*/
+    --clr-text-secondary: #7E7E7E; /* secondary text color*/
+
+    /* ============================ buttons ============================= */
+    --clr-btn-text-secondary: #FFFFFF87; /*text inside buttons when hovered, active, focused*/
+    --clr-btn-disabled: #B4B4B4; /*disabled button color*/
+    --clr-btn-hovered: #FFE302; /*hovered button color*/
+
+    /* ============================ inputs =============================== */
+    --clr-input: #D0CFCF; /*input color*/
+    --clr-error: #CB3D40; /*on invalid data enter*/
+
+    /* =======================*** spacing ***============================ */
+
+    --spc-card: 20px; /*user card spacing*/
+
+    /* =========================== breack-points ======================== */
+    --mobile: 360px;
+    --tablet: 768px;
+    --desctop: 1024px;
+}
