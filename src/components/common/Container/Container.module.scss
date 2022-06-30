@@ -3,14 +3,14 @@
 .container {
     margin: 0 auto;
     padding: 0 16px;
+    min-width: var(--mobile);
 
-    @include mobile-only {
-        width: var(--mobile);
-    }
     @include tablet-only {
-        width: var(--tablet);
+        min-width: var(--tablet);
+        padding: 0 32px;
     }
     @include desktop-only {
-        width: var(--desktop);
+        min-width: var(--desktop);
+        padding: 0 60px;
     }
 }

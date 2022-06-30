@@ -3,25 +3,25 @@ import s from './UserInfo.module.scss'
 
 const defaultProps = {
     name: '',
-    job: '',
+    position: '',
     location: '',
     contacts: '',
 }
 
-const UserInfo = ({ name, job, location, contacts} = defaultProps) => {
+const UserInfo = ({ name, position, phone, email} = defaultProps) => {
     return (
         <>
             <p className={s.name}>
                 {name}
             </p>
             <p>
-                {job}
+                {position}
             </p>
             <p>
-                {location}
+                {email}
             </p>
             <p>
-                {contacts}
+                {phone}
             </p>
         </>
     )
@@ -29,9 +29,9 @@ const UserInfo = ({ name, job, location, contacts} = defaultProps) => {
 
 UserInfo.propTypes = {
     name: PropTypes.string.isRequired,
-    job: PropTypes.string.isRequired,
-    location: PropTypes.string.isRequired,
-    contacts: PropTypes.string.isRequired,
+    position: PropTypes.string.isRequired,
+    phone: PropTypes.string.isRequired,
+    email: PropTypes.string.isRequired,
 }
 
 export default UserInfo;

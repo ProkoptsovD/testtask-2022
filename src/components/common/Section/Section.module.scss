@@ -1,4 +1,13 @@
+@import '../../../sass/mixins/_media.scss';
+
 .section {
     padding-top: 40px;
     text-align: center;
+
+    @include tablet-only {
+        padding-top: 89px;
+    }
+    @include desktop-only {
+        padding-top: 164px;
+    }
 }

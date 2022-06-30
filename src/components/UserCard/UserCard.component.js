@@ -3,16 +3,18 @@ import Avatar from './Avatar/Avatar.component';
 import s from './UserCard.module.scss';
 import UserInfo from './UserInfo/UserInfo.component';
 
-const UserCard = ({ className }) => {
-
+const UserCard = ({ className, user }) => {
+    const { photo, ...restValues} = user;
+    
     return (
         <article
             className={`${s.card} ${className ?? ''}`}
         >
             <Avatar
+                url={photo}
                 className={s.avatar}
             />
-            <UserInfo />
+            <UserInfo {...restValues}/>
         </article>
     )
 }

@@ -5,11 +5,15 @@ import Section from "../common/Section/Section.component";
 import UserCard from "../UserCard";
 import s from './Users.module.scss';
 
-const Users = () => {
+const Users = ({userList = []}) => {
+    console.log(userList);
     
     const renderUserList = (data) => data.map(user => (
-        <li className={s.list_item}>
-            <UserCard />
+        <li
+            key={user.id}
+            className={s.list_item}
+        >
+            <UserCard user={user}/>
         </li>
     ))
 
@@ -25,7 +29,7 @@ const Users = () => {
                     Working with GET request
                 </Heading>
                 <ul className={s.user_list}>
-                    {/* {renderUserList()} */}
+                    {renderUserList(userList)}
                 </ul>
                 <Button
                     className={s.btn}

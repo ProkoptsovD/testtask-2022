@@ -1,6 +1,7 @@
-import Container from "../common/Container/Container.component"
-import Heading from "../common/Heading/Heading.component";
-import Section from "../common/Section/Section.component";
+import Button from "../common/Button";
+import Container from "../common/Container"
+import Heading from "../common/Heading";
+import Section from "../common/Section";
 import s from './Hero.module.scss';
 
 const Hero = () => {
@@ -16,6 +17,9 @@ const Hero = () => {
                 <p className={s.text}>
                     What defines a good front-end developer is one that has skilled knowledge of HTML, CSS, JS with a vast understanding of User design thinking as they'll be building web interfaces with accessibility in mind. They should also be excited to learn, as the world of Front-End Development keeps evolving.
                 </p>
+                <Button>
+                    Sign up
+                </Button>
             </Container>
         </Section>
     )

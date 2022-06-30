@@ -18,6 +18,13 @@ $image-path-desktop-3x: '../../assets/desktop/hero-desktop@3x.jpg';
     display: flex;
     align-items: center;
     flex-direction: column;
+
+    @include tablet-only {
+        padding: 0 194px;
+    }
+    @include desktop-only {
+        padding: 0 322px;
+    }
 }
 .section {
     position: relative;
@@ -34,6 +41,7 @@ $image-path-desktop-3x: '../../assets/desktop/hero-desktop@3x.jpg';
         background-image: url(#{$image-path-mobile-3x});
     }
     @include tablet-only {
+        height: 650px;
         background-image: url(#{$image-path-tablet-1x});
 
         @include pixel-ratio-2x {
@@ -57,6 +65,13 @@ $image-path-desktop-3x: '../../assets/desktop/hero-desktop@3x.jpg';
 .heading {
     margin-bottom: 21px;
 }
+.text {
+    margin-bottom: 32px;
+}
 .heading, .text {
     width: 328px;
+
+    @include tablet-only {
+        width: 100%;
+    }
 }

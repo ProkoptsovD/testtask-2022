@@ -1,4 +1,5 @@
 @import '../../../sass/placeholders/_visually-hidden.scss';
+@import '../../../sass/mixins/_media.scss';
 
 .fileloader {
     display: none;
@@ -13,6 +14,11 @@
     border-radius: 4px;
     color: var(--clr-input);
     cursor: pointer;
+
+    @include tablet-only {
+        width: 380px;
+        height: 54px;
+    }
 }
 .upload_btn {
     position: absolute;

@@ -1,7 +1,8 @@
 .card {
-    display: flex;
-    justify-content: center;
+
     padding: var(--spc-card);
+
+    background-color: var(--clr-light-solid);
 
     .avatar {
         margin-bottom: 20px;
