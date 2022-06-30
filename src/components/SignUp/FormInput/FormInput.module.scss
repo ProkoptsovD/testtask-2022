@@ -30,8 +30,18 @@
 
     .input {
         background-color: transparent;
-        outline: 1px solid var(--clr-input);
+        color: var(--clr-dark-semi-solid);
+        
+        &.invalid {
+            border-color: var(--clr-error);
+            &:focus-within {
+                outline-color: var(--clr-error);
+            }
+        }
 
+        &:focus-within {
+            outline: 1px solid var(--clr-input);
+        }
         &:focus-within + .label {
             transform: translateY(-23px);
             height: auto;
@@ -39,4 +49,8 @@
             background-color: var(--clr-bg-primary);
         }
     }
+}
+
+.invalid {
+    color: var(--clr-error);
 }
