@@ -6,7 +6,7 @@ import s from './Hero.module.scss';
 const Hero = () => {
     return (
         <Section className={s.section}>
-            <Container>
+            <Container className={s.container}>
                 <Heading
                     type='h1'
                     className={s.heading}

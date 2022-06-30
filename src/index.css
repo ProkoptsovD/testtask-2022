@@ -9,5 +9,7 @@ body {
   font-weight: var(--fw-400);
   font-size: var(--fs-400);
   line-height: var(--lh-400);
+
+  background-color: var(--clr-bg-primary);
 }
 

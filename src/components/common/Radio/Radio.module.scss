@@ -3,3 +3,27 @@
 .radio {
     @extend %visually-hidden;
 }
+.checkbox {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid var(--clr-input);
+    cursor: pointer;
+}
+.checked {
+    border-color: var(--clr-secondary);
+
+    &::after {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        content: '';
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: var(--clr-secondary);
+
+        transform: translate(-50%, -50%);
+    }
+}

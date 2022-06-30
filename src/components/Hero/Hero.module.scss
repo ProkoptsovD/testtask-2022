@@ -14,6 +14,11 @@ $image-path-desktop-3x: '../../assets/desktop/hero-desktop@3x.jpg';
 .section, .heading {
     color: var(--clr-light-solid);
 }
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 .section {
     position: relative;
     height: 500px;

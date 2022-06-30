@@ -1,34 +1,28 @@
-import Button from "../../common/Button/Button.component";
-import Input from "../../common/Input";
-import Radio from "../../common/Radio/Radio.component";
+import Button from "../../common/Button";
 import FileLoader from "../FileLoader";
+import FormInput from "../FormInput";
 import RadioSelector from "../RadioSelector";
 import s from './Form.module.scss';
 
 const Form = () => {
     return (
         <form className={s.form}>
-            <label className={s.label}>
-                <Input
-                    type="text"
-                    name="userName"
-                    placeholder="Your name"
-                />
-            </label>
-            <label className={s.label}>
-                <Input
-                    type="email"
-                    name="email"
-                    placeholder="Email"
-                />
-            </label>
-            <label className={s.label}>
-                <Input
-                    type="password"
-                    name="password"
-                    placeholder="Phone"
-                />
-            </label>
+            <FormInput
+                type="text"
+                name="userName"
+                content="Your name"
+            />
+            <FormInput
+                type="email"
+                name="email"
+                content="Email"
+            />
+            <FormInput
+                type="password"
+                name="password"
+                content="Phone"
+                tip="+38 (XXX) XXX - XX - XX"
+            />
             <RadioSelector
                 title='Select your position'
                 labels={['js', 'react', 'redux', 'angular']}/>
